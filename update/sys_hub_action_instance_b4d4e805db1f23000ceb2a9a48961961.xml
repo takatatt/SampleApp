@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">ca07ee090b30030085c083eb37673afc</action_type>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sample Test">533e5849dbdb23000ceb2a9a48961902</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>devadmin</sys_created_by>
+        <sys_created_on>2019-01-27 13:15:02</sys_created_on>
+        <sys_id>b4d4e805db1f23000ceb2a9a48961961</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_hub_action_instance_b4d4e805db1f23000ceb2a9a48961961</sys_update_name>
+        <sys_updated_by>devadmin</sys_updated_by>
+        <sys_updated_on>2019-01-27 14:33:52</sys_updated_on>
+        <ui_id>7af1bc26-71e3-474d-b082-f077c3fd759b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b4d4e805db1f23000ceb2a9a48961961"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b4d4e805db1f23000ceb2a9a48961961</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>devadmin</sys_created_by>
+        <sys_created_on>2019-01-27 13:15:03</sys_created_on>
+        <sys_id>05d4e805db1f23000ceb2a9a48961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>devadmin</sys_updated_by>
+        <sys_updated_on>2019-01-27 13:15:03</sys_updated_on>
+        <value>u_state=1</value>
+        <variable display_value="">460722490b30030085c083eb37673a0b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b4d4e805db1f23000ceb2a9a48961961</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>devadmin</sys_created_by>
+        <sys_created_on>2019-01-27 13:15:02</sys_created_on>
+        <sys_id>78d4e805db1f23000ceb2a9a48961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>devadmin</sys_updated_by>
+        <sys_updated_on>2019-01-27 13:15:02</sys_updated_on>
+        <value>x_135686_sample_ap_test</value>
+        <variable display_value="">3807ee090b30030085c083eb37673a08</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b4d4e805db1f23000ceb2a9a48961961</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>devadmin</sys_created_by>
+        <sys_created_on>2019-01-27 13:15:02</sys_created_on>
+        <sys_id>b4d4e805db1f23000ceb2a9a48961965</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>devadmin</sys_updated_by>
+        <sys_updated_on>2019-01-27 13:15:02</sys_updated_on>
+        <value>u_state=1</value>
+        <variable display_value="">0507ee090b30030085c083eb37673a2e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b4d4e805db1f23000ceb2a9a48961961</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>devadmin</sys_created_by>
+        <sys_created_on>2019-01-27 13:15:03</sys_created_on>
+        <sys_id>c5d4e805db1f23000ceb2a9a48961975</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>devadmin</sys_updated_by>
+        <sys_updated_on>2019-01-27 13:15:03</sys_updated_on>
+        <value>x_135686_sample_ap_test</value>
+        <variable display_value="">8a07ee090b30030085c083eb37673aff</variable>
+    </sys_variable_value>
+</record_update>

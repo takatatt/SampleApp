@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_list_test" label="List Test From" language="en" table="x_135686_sample_ap_test">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_list_test</element>
+            <help/>
+            <hint/>
+            <label>List Test From</label>
+            <language>en</language>
+            <name>x_135686_sample_ap_test</name>
+            <plural>List Test Froms</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>devadmin</sys_created_by>
+            <sys_created_on>2019-01-18 12:06:00</sys_created_on>
+            <sys_id>31be7d42db4723000ceb2a9a489619aa</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>List Test From</sys_name>
+            <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+            <sys_update_name>sys_documentation_x_135686_sample_ap_test_u_list_test_en</sys_update_name>
+            <sys_updated_by>devadmin</sys_updated_by>
+            <sys_updated_on>2019-01-20 12:49:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

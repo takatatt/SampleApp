@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_list_test</field>
+        <global>true</global>
+        <messages/>
+        <name>List Check</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	//Type appropriate comment here, and begin script below
+	//alert(g_form.getValue('u_host_name'));
+	var list_from = g_form.getValue('u_list_test');
+	var list_to = g_form.getValue('u_list_test_to');
+	
+	var arr_from = list_from.split(',');
+	var arr_to = list_to.split(',');
+	
+	alert("List From:" + list_from);
+	alert("List To:" + list_to);
+	//alert("Array From[0][1]" + arr_from[0] + ","+ arr_from[1]);
+	
+	// Compare two arrays.
+	var i,j;
+	for(i = 0;i < arr_from.length;i++){
+		for(j = 0;j < arr_to.length;j++){
+			if(arr_from[i] == arr_to[j]){
+				break;
+			}
+			//alert(arr_from[i] + "is found!");
+		}
+		if(j == arr_to.length){
+			alert(arr_from[i] + ' is not found!!');
+		}else{
+			alert(arr_from[i] + "=" + arr_to[j]);
+			var gr = new GlideRecord('x_135686_sample_ap_test_ci');
+			var gr_from = gr.get(arr_from[i]);
+			var gr_to = gr.get(arr_from[j]);
+			alert(gr_from.getValue("name") + "=" + gr_to.getValue("name"));
+			//alert(arr_from[i].getValue("name") + "=" + arr_to[j].getValue("name"));
+		}
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>devadmin</sys_created_by>
+        <sys_created_on>2019-01-20 12:36:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>348894b6db0b23000ceb2a9a489619bc</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>List Check</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_script_client_348894b6db0b23000ceb2a9a489619bc</sys_update_name>
+        <sys_updated_by>devadmin</sys_updated_by>
+        <sys_updated_on>2019-01-22 03:38:59</sys_updated_on>
+        <table>x_135686_sample_ap_test</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

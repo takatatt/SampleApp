@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Note" section_id="5809b73cdb9b23000ceb2a9a489619a1" sys_domain="global" table="x_135686_sample_ap_test" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_wiki</element>
+            <position>0</position>
+            <sys_created_by>devadmin</sys_created_by>
+            <sys_created_on>2019-01-27 10:03:35</sys_created_on>
+            <sys_id>60093b3cdb9b23000ceb2a9a4896192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Note" display_value="Note" name="x_135686_sample_ap_test" sys_domain="global" view="Default view">5809b73cdb9b23000ceb2a9a489619a1</sys_ui_section>
+            <sys_updated_by>devadmin</sys_updated_by>
+            <sys_updated_on>2019-01-27 10:03:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_ci_note</element>
+            <position>1</position>
+            <sys_created_by>devadmin</sys_created_by>
+            <sys_created_on>2019-01-27 10:03:35</sys_created_on>
+            <sys_id>e0093b3cdb9b23000ceb2a9a4896192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Note" display_value="Note" name="x_135686_sample_ap_test" sys_domain="global" view="Default view">5809b73cdb9b23000ceb2a9a489619a1</sys_ui_section>
+            <sys_updated_by>devadmin</sys_updated_by>
+            <sys_updated_on>2019-01-27 10:03:35</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Note</caption>
+            <header>false</header>
+            <name>x_135686_sample_ap_test</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>devadmin</sys_created_by>
+            <sys_created_on>2019-01-27 10:03:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5809b73cdb9b23000ceb2a9a489619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Note</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+            <sys_update_name>sys_ui_section_5809b73cdb9b23000ceb2a9a489619a1</sys_update_name>
+            <sys_updated_by>devadmin</sys_updated_by>
+            <sys_updated_on>2019-01-27 10:03:34</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

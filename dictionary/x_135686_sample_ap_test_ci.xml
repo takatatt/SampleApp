@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="cmdb_ci" label="Test CI" max_length="40" name="x_135686_sample_ap_test_ci" sizeclass="3" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Test" max_length="32" name="u_test" reference="x_135686_sample_ap_test" type="reference"/>
+    </element>
+</database>

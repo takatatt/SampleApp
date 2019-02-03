@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_135686_sample_ap_test</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Sort List Insert</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	//Paramters
+	var ci_table = 'x_135686_sample_ap_test_ci';
+	var list_column = 'u_list_test';
+	
+	var i;
+	var  gr = new GlideRecord(ci_table);
+	var cur_list = current.getValue(list_column);
+	if (cur_list == null){
+		return;
+	}
+	var cur_arr = cur_list.split(',');
+	
+	for(i=0;i < cur_arr.length;i++){
+		gr.get(cur_arr[i]);
+	}
+	gs.addInfoMessage("-----");
+	
+	cur_arr.sort(function(a,b){
+		var gr, namea, nameb;
+		
+		gr = new GlideRecord(ci_table);
+		gr.get(a);
+		namea = gr.getValue('name');
+		gr.get(b);
+		nameb = gr.getValue('name');
+		
+		if(namea > nameb)return 1;
+		if(namea < nameb)return -1;
+		return 0;
+	});
+	
+	//	cur_arr.sort();
+	//gs.addInfoMessage("arr:" + cur_arr.toString());
+	current.setValue(list_column, cur_arr);
+	//gs.addInfoMessage("set:" + current.getValue(list_column));
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>devadmin</sys_created_by>
+        <sys_created_on>2019-01-22 03:38:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a37f641bdb4b63000ceb2a9a4896199c</sys_id>
+        <sys_mod_count>66</sys_mod_count>
+        <sys_name>Sort List Insert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_script_a37f641bdb4b63000ceb2a9a4896199c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-26 15:42:46</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a37f641bdb4b63000ceb2a9a4896199c"/>
+</record_update>

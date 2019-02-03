@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_style/>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Make Note</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var ci_table = 'x_135686_sample_ap_test_ci';
+
+var gr = new GlideRecord(ci_table);
+var fc = current.u_fault_count;
+var note = "";
+var today = new Date();
+
+gr.addQuery('fault_count', '>=', fc);
+gr.query();
+note += today.getFullYear() + "/" +  (today.getMonth() + 1) + "/"+ today.getDate() + "\n";
+//javascript:(current.u_glide_date_7note == today.getFullYear() + "-" +  ("0"+(date.getMonth() + 1)).slice(-2) + "-"+ ("0"+date.getDate()).slice(-2)
+
+note += "Number of CIs:" + gr.getRowCount() + "\n";
+while(gr.next()){
+//	note += gr.name + "<br/>";
+	note += gr.name + "\n";
+}
+
+//current.setValue('u_wiki', note);
+current.setValue('u_ci_note', note);
+current.update();
+action.setRedirectURL(current);]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>devadmin</sys_created_by>
+        <sys_created_on>2019-01-27 07:18:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>74ee4734db5b23000ceb2a9a48961920</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Make Note</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_ui_action_74ee4734db5b23000ceb2a9a48961920</sys_update_name>
+        <sys_updated_by>devadmin</sys_updated_by>
+        <sys_updated_on>2019-01-28 02:11:52</sys_updated_on>
+        <table>x_135686_sample_ap_test</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

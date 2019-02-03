@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Test" max_length="40" name="x_135686_sample_ap_test" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="CI Note" max_length="65536" name="u_ci_note" type="string"/>
+        <element label="Data Structure Test" max_length="800" name="u_data_structure_test" type="data_structure"/>
+        <element label="Fault Count" max_length="40" name="u_fault_count" type="integer"/>
+        <element label="Group List" max_length="4000" name="u_group_list" type="glide_list"/>
+        <element label="Host Name" max_length="40" name="u_host_name" type="string"/>
+        <element label="Install Date" max_length="40" name="u_install_date" type="glide_date"/>
+        <element label="IP Address" max_length="40" name="u_ip_address" type="ip_addr"/>
+        <element label="List Test From" max_length="4000" name="u_list_test" reference="x_135686_sample_ap_test_ci" type="glide_list"/>
+        <element label="List Test To" max_length="4000" name="u_list_test_to" reference="x_135686_sample_ap_test_ci" type="glide_list"/>
+        <element label="Management Group" max_length="4000" name="u_management_group" type="glide_list"/>
+        <element label="Name-Value Test" max_length="4000" name="u_name_value_test" type="simple_name_values"/>
+        <element choice="3" label="State" max_length="40" name="u_state" type="integer">
+            <choice>
+                <element label="Open" value="1"/>
+            </choice>
+        </element>
+        <element label="Subnet Mask" max_length="40" name="u_subnet_mask" type="ip_addr"/>
+        <element label="Update Note" max_length="40" name="u_update_note" type="boolean"/>
+        <element label="Wiki" max_length="65536" name="u_wiki" type="wiki_text"/>
+    </element>
+</database>

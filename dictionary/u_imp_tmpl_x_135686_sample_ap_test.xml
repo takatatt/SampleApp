@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 135686 Sample Ap Test" max_length="40" name="u_imp_tmpl_x_135686_sample_ap_test" type="collection">
+        <element attributes="import_attribute_name=Host Name,edge_encryption_enabled=true" label="Host Name" max_length="40" name="u_host_name" type="string"/>
+        <element attributes="import_attribute_name=IP Address,edge_encryption_enabled=true" label="IP Address" max_length="40" name="u_ip_address" type="string"/>
+        <element attributes="import_attribute_name=Number,edge_encryption_enabled=true" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="import_attribute_name=Subnet Mask,edge_encryption_enabled=true" label="Subnet Mask" max_length="40" name="u_subnet_mask" type="string"/>
+        <element attributes="import_attribute_name=Sys ID,edge_encryption_enabled=true" label="Sys ID" max_length="40" name="u_sys_id" type="string"/>
+    </element>
+</database>
