@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_ci_note</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>DateStatusTest</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Type appropriate comment here, and begin script below
+	
+	/*
+	var gd1 = new GlideDate();
+	var gd2 = new GlideDate();
+	//gd2.setDisplayValue(g_form.u_original_date.getDisplayValue());
+	gd2.setDisplayValue(g_form.u_original_date);
+	alert(g_form.u_original_date);
+	
+	var timeDiff = GlideDate.subtract(gd1, gd2);
+	alert(timeDiff);
+ 	*/
+	
+	g_form.addInfoMessage("Ajax calling Started.");
+	
+	var ds = new GlideAjax('x_135686_sample_ap.DateStatus');
+	var org_date = g_form.getValue('u_original_date');
+	//g_form.addInfoMessage(org_date);
+	
+	//var ds = new GlideAjax('DateStatus');
+	ds.addParam('sysparm_name', 'redTime');
+	ds.addParam('sysparm_date', org_date);
+	
+	ds.getXML(ajaxHello);
+	g_form.addInfoMessage("Ajax calling ended.");
+	
+	function ajaxHello(response){
+		var helloScriptInclude = response.responseXML.documentElement.getAttribute("answer");
+		alert(helloScriptInclude);
+		g_form.setValue('u_description', helloScriptInclude);
+	}
+	//alert(new x_135686_sample_ap.DateStatus().test());
+	//g_form.setValue('u_ci_note', ds.test());
+	//var str = ds.greenTime();
+	//g_form.addInfoMessage(str);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>takatatt</sys_created_by>
+        <sys_created_on>2019-02-12 16:49:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d2fef4edba323000ceb2a9a489619ac</sys_id>
+        <sys_mod_count>56</sys_mod_count>
+        <sys_name>DateStatusTest</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_script_client_7d2fef4edba323000ceb2a9a489619ac</sys_update_name>
+        <sys_updated_by>takatatt</sys_updated_by>
+        <sys_updated_on>2019-04-08 11:21:49</sys_updated_on>
+        <table>x_135686_sample_ap_test</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

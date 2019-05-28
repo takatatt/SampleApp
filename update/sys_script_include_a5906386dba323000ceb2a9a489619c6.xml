@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_135686_sample_ap.DateStatus</api_name>
+        <client_callable>true</client_callable>
+        <description>	/*&#13;
+	var OpusHRfieldStyle = Class.create();&#13;
+	OpusHRfieldStyle.prototype = {&#13;
+		initialize: function() {&#13;
+			this.timeDiff = gs.dateDiff(gs.now().getDisplayValue(), current.u_suspend_till.getDisplayValue(), true);&#13;
+		},&#13;
+		&#13;
+		//True if u_suspend_till is less than 1 day from now&#13;
+		redTime: function() {&#13;
+			return this.timeDiff &lt;= 0;&#13;
+		},&#13;
+		&#13;
+		//True if u_suspend_till is within 1 day from now&#13;
+		orangeTime: function() {&#13;
+			return this.timeDiff &gt; 0 &amp;&amp; this.timeDiff &lt; 86400;&#13;
+		},&#13;
+		&#13;
+		//True if u_suspend_till is more than  1 day and less than 21 days&#13;
+		greenTime: function() {&#13;
+			return this.timeDiff &gt;= 86400 &amp;&amp; this.timeDiff &lt; 1814400;&#13;
+		},&#13;
+		&#13;
+		type: 'OpusHRfieldStyle'&#13;
+	};&#13;
+ 	*/</description>
+        <name>DateStatus</name>
+        <script><![CDATA[var DateStatus = Class.create();
+DateStatus.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	_dateDiff: function(date) {
+		//var timeDiff = gs.dateDiff(gs.now().getDisplayValue(), current.u_original_date.getDisplayValue(), true);
+		
+		//var sgd1 = new GlideDate(date);
+		var sgd1 = new GlideDate();
+		var sgd2 = new GlideDate();
+		sgd2.setDisplayValue(date);
+		
+		//gs.addInfoMessage(sgd1.getDisplayValue());
+		
+		var duration= GlideDate.subtract(sgd1, sgd2);
+		//gs.addInfoMessage(duration.getDayPart());
+		//gs.addInfoMessage(duration.getDisplayValue());
+		
+		return duration.getRoundedDayPart();
+	},
+	
+	isToday: function() {
+		return this._dateDiff(this.getParameter('sysparam_date'));
+	},
+	
+	//True if u_suspend_till is less than 1 day from now
+	redTime: function() {
+		return this._dateDiff(this.getParameter('sysparm_date'));
+	},
+	
+	//True if u_suspend_till is within 1 day from now
+	orangeTime: function() {
+		return this._dateDiff() > 0 && this._dateDiff() < 86400;
+	},
+	
+	//True if u_suspend_till is more than  1 day and less than 21 days
+	
+	greenTime: function() {
+		return this._dateDiff() >= 86400 && this._dateDiff() < 1814400;
+	},
+	
+	type: 'DateStatus'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>takatatt</sys_created_by>
+        <sys_created_on>2019-02-12 15:48:32</sys_created_on>
+        <sys_id>a5906386dba323000ceb2a9a489619c6</sys_id>
+        <sys_mod_count>90</sys_mod_count>
+        <sys_name>DateStatus</sys_name>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_script_include_a5906386dba323000ceb2a9a489619c6</sys_update_name>
+        <sys_updated_by>takatatt</sys_updated_by>
+        <sys_updated_on>2019-02-18 11:23:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

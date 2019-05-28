@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Details" section_id="15921644dbd163000ceb2a9a48961979" sys_domain="global" table="x_135686_sample_ap_test" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_ip_address</element>

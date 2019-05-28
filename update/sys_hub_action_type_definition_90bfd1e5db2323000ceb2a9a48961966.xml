@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>approval</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Approval</name>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>takatatt</sys_created_by>
+        <sys_created_on>2019-02-10 17:04:53</sys_created_on>
+        <sys_id>90bfd1e5db2323000ceb2a9a48961966</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Approval</sys_name>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_90bfd1e5db2323000ceb2a9a48961966</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-04-29 18:54:53</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=90bfd1e5db2323000ceb2a9a48961966"/>
+    <sys_variable_value action="delete_multiple" query="document_key=90bfd1e5db2323000ceb2a9a48961966"/>
+</record_update>

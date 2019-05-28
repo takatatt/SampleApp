@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Scheduled job test</name>
+        <run_as display_value="Tetsuo Takata">fa864944db1023000ceb2a9a4896190f</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-03-09 14:08:35</run_start>
+        <run_time>1969-12-31 15:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var tables = [
+'x_135686_sample_ap_test',
+'x_135686_sample_ap_test_task'
+];
+
+tables.map(function(tname){
+	var LOGHEAD = "【CI All Delete Tool】:" + tname;
+	var dryrun = true;
+	
+	var hi = new GlideTableHierarchy(tname);
+	var base = hi.getBase();
+	gs.info(LOGHEAD + "+++: " + hi.getBase());
+	
+	var gr = new GlideRecord(tname);
+	if(tname == base) {
+	} else {
+		gr.addQuery('sys_class_name', tname);
+	}
+	gr.query();
+	gs.info(LOGHEAD + "   1:" + gr.getLabel() + ":" + tname + "(" + gr.getRowCount() + ")");
+	
+	/*
+	gr.next();
+	gs.info(LOGHEAD + "+++A:" + gr.getValue('sys_class_name'));
+ 	*/
+	/*
+	gr.addQuery('sys_class_name', tname);
+	gr.query();
+	gs.info(LOGHEAD + "2:" + gr.getLabel() + ":" + tname + "(" + gr.getRowCount() + ")");
+	
+	gr.query();
+	gs.info(LOGHEAD + "3:" + gr.getLabel() + ":" + tname + "(" + gr.getRowCount() + ")");
+ 	*/
+	
+	//gs.info(LOGHEAD + tlabel + '削除準備');
+	
+	if(!dryrun)
+		{
+		gs.info(LOGHEAD + tlabel + '削除開始');
+		//gr.deleteMultiple();
+		gs.info(LOGHEAD + tlabel + '削除完了');
+	}
+});
+
+//deleteRecords(tables);
+/*
+var Gr1 = new GlideRecord('u_large_scale_fault_detail');
+var Gr2 = new GlideRecord('u_large_scale_fault_management');
+var Gr3 = new GlideRecord('u_alert_chk');
+var Gr4 = new GlideRecord('u_quietness_rule');
+var Gr5 = new GlideRecord('em_alert');
+var Gr6 = new GlideRecord('u_time_analysis');
+var Gr7 = new GlideRecord('x_nttd9_event_line_borrowing');
+var Gr8 = new GlideRecord('x_nttd9_event_construction_work');
+var Gr9 = new GlideRecord('u_problem_conference');
+var Gr10 = new GlideRecord('problem_task');
+var Gr11 = new GlideRecord('Problem');
+var Gr12 = new GlideRecord('u_circumstances');
+var Gr13 = new GlideRecord('u_ci_by_incident');
+var Gr14 = new GlideRecord('x_nttd9_event_ci_by_line_borrowing');
+var Gr15 = new GlideRecord('x_nttd9_portal_handling');
+var GR16 = new GlideRecord('x_nttd9_portal_special_rule_detail');
+var Gr17 = new GlideRecord('x_nttd9_portal_content');
+var Gr18 = new GlideRecord('Incident');
+var Gr19 = new GlideRecord('u_maintenance_information_version');
+var Gr20 = new GlideRecord('x_nttd9_portal_special_rule');
+var Gr21 = new GlideRecord('u_maintenance_committee');
+var Gr22 = new GlideRecord('u_export_result');
+var Gr23 = new GlideRecord('u_mail_template');
+var Gr24 = new GlideRecord('u_monitoring_setting');
+var Gr25 = new GlideRecord('u_monitoring_device');
+var Gr26 = new GlideRecord('u_line_information');
+var Gr27 = new GlideRecord('u_equipment_information');
+var Gr28 = new GlideRecord('u_line_information_temporary');
+var Gr29 = new GlideRecord('u_equipment_information_temporary');
+var Gr30 = new GlideRecord('u_maintenance_file');
+var Gr31 = new GlideRecord('u_maintenunce_file_temporary');
+var Gr32 = new GlideRecord('u_maintenance_information');
+var Gr33 = new GlideRecord('u_maintenance_information_temporary');
+var Gr34 = new GlideRecord('u_operation_acceptance');
+var Gr35 = new GlideRecord('u_client');
+var Gr36 = new GlideRecord('u_maintenance_contact');
+var Gr37 = new GlideRecord('u_business_person');
+var Gr38 = new GlideRecord('u_product');
+var Gr39 = new GlideRecord('u_base');
+var Gr40 = new GlideRecord('u_system');
+ */]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>takatatt</sys_created_by>
+        <sys_created_on>2019-03-09 14:08:58</sys_created_on>
+        <sys_id>994af346db0c33000ceb2a9a48961927</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>Scheduled job test</sys_name>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sysauto_script_994af346db0c33000ceb2a9a48961927</sys_update_name>
+        <sys_updated_by>takatatt</sys_updated_by>
+        <sys_updated_on>2019-03-10 16:49:50</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_instance">
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Sample State Test">22e42c05db1f23000ceb2a9a4896193e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>takatatt</sys_created_by>
+        <sys_created_on>2019-02-20 16:24:40</sys_created_on>
+        <sys_id>b866fcb8db3323000ceb2a9a4896194d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_hub_action_instance_b866fcb8db3323000ceb2a9a4896194d</sys_update_name>
+        <sys_updated_by>takatatt</sys_updated_by>
+        <sys_updated_on>2019-02-20 16:24:41</sys_updated_on>
+        <ui_id>d0d27150-1ab2-4863-812a-f167e84316c8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b866fcb8db3323000ceb2a9a4896194d"/>
+</record_update>

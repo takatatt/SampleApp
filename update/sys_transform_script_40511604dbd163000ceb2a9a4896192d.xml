@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_transform_script">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
     <sys_transform_script action="INSERT_OR_UPDATE">
         <active>true</active>
         <map display_value="u_imp_tmpl_x_135686_sample_ap_test">8c511604dbd163000ceb2a9a4896191d</map>

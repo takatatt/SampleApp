@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="cmn_schedule_maintenance">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="cmn_schedule_maintenance">
     <cmn_schedule_maintenance action="INSERT_OR_UPDATE">
         <applies_to>x_135686_sample_ap_test_ci</applies_to>
         <condition table="x_135686_sample_ap_test_ci">fault_count&gt;=5^EQ<item endquery="false" field="fault_count" goto="false" newquery="false" operator="&gt;=" or="false" value="5"/>
@@ -11,6 +10,7 @@
         <name>Test</name>
         <parent/>
         <read_only>false</read_only>
+        <source>cmdb_ci</source>
         <sys_class_name>cmn_schedule_maintenance</sys_class_name>
         <sys_created_by>devadmin</sys_created_by>
         <sys_created_on>2019-01-27 14:30:51</sys_created_on>

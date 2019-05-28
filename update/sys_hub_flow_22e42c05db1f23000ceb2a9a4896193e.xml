@@ -1,25 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_hub_flow">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
     <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
         <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
         <description/>
-        <label_cache>[{"name":"2b1d288d-6699-49e4-b767-629240228a0a.Record","label":"1➛Test Record","reference":"x_135686_sample_ap_test","reference_display":"Test Record"},{"name":"2b1d288d-6699-49e4-b767-629240228a0a.Table","label":"1➛Test Table","reference":"x_135686_sample_ap_test","reference_display":"Test Table"}]</label_cache>
+        <internal_name>sample_state_test</internal_name>
+        <label_cache>[{"name":"7acdf7c7-1b79-45d5-b019-4cffb9671edb.email","label":"3➛email","reference":"sys_email","reference_display":"email"},{"name":"2b1d288d-6699-49e4-b767-629240228a0a.Record.u_state","label":"1➛Test Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_135686_sample_ap_test","column_name":"u_state"},{"name":"2b1d288d-6699-49e4-b767-629240228a0a.Table","label":"1➛Test Table","reference":"x_135686_sample_ap_test","reference_display":"Test Table"},{"name":"2b1d288d-6699-49e4-b767-629240228a0a.Record","label":"1➛Test Record","reference":"x_135686_sample_ap_test","reference_display":"Test Record"},{"name":"3e8436be-4cf9-422e-bb02-456983aedda8.Record","label":"3➛Test Record","reference":"x_135686_sample_ap_test","reference_display":"Test Record"},{"name":"3e8436be-4cf9-422e-bb02-456983aedda8.Table","label":"3➛Test Table","reference":"x_135686_sample_ap_test","reference_display":"Test Table"}]</label_cache>
         <latest_snapshot/>
+        <master_snapshot/>
         <name>Sample State Test</name>
+        <outputs/>
         <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
         <status>draft</status>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>devadmin</sys_created_by>
         <sys_created_on>2019-01-27 13:15:25</sys_created_on>
         <sys_id>22e42c05db1f23000ceb2a9a4896193e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Sample State Test</sys_name>
         <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
         <sys_policy/>
         <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
         <sys_update_name>sys_hub_flow_22e42c05db1f23000ceb2a9a4896193e</sys_update_name>
-        <sys_updated_by>devadmin</sys_updated_by>
-        <sys_updated_on>2019-01-27 14:32:46</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-04-29 18:54:53</sys_updated_on>
+        <type>flow</type>
     </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=22e42c05db1f23000ceb2a9a4896193e"/>
 </record_update>

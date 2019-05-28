@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_report">
+    <sysauto_report action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <address_list/>
+        <condition/>
+        <conditional>true</conditional>
+        <group_list/>
+        <include_detail>false</include_detail>
+        <include_with/>
+        <name>Test</name>
+        <omit_if_no_records>true</omit_if_no_records>
+        <output_type>PDF-landscape</output_type>
+        <page_height_in_pixels>612</page_height_in_pixels>
+        <page_size>Letter</page_size>
+        <page_width_in_pixels>792</page_width_in_pixels>
+        <report display_value="Report Test">db6b7a14db3723000ceb2a9a48961918</report>
+        <report_body/>
+        <report_title/>
+        <run_as display_value="Tetsuo Takata">fa864944db1023000ceb2a9a4896190f</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-02-19 12:53:10</run_start>
+        <run_time>1969-12-31 15:00:00</run_time>
+        <run_type>daily</run_type>
+        <sys_class_name>sysauto_report</sys_class_name>
+        <sys_created_by>takatatt</sys_created_by>
+        <sys_created_on>2019-02-19 13:01:34</sys_created_on>
+        <sys_id>746cb258db7723000ceb2a9a4896199d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Test</sys_name>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sysauto_report_746cb258db7723000ceb2a9a4896199d</sys_update_name>
+        <sys_updated_by>takatatt</sys_updated_by>
+        <sys_updated_on>2019-02-19 16:16:22</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+        <user_list/>
+        <zip>false</zip>
+    </sysauto_report>
+</record_update>

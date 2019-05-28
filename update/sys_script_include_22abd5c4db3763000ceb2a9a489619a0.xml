@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_135686_sample_ap.isToday</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>isToday</name>
+        <script><![CDATA[var isToday = Class.create();
+isToday.prototype = {
+    initialize: function() {
+    },
+	
+	isToday: function(date) {
+		var sgd1 = new GlideDate();
+		var sgd2 = new GlideDate();
+		sgd2.setDisplayValue(date.getDisplayValue());
+		
+		if(sgd1.getDisplayValue() == sgd2.getDisplayValue()) {
+			return true;
+		} else {
+			return false;
+		}
+	},
+	
+	dateDiff: function(date) {
+		var sgd1 = new GlideDate();
+		var sgd2 = new GlideDate();
+		gs.addInfoMessage(date);
+		sgd2.setDisplayValue(date.getDisplayValue());
+		
+		gs.addInfoMessage(sgd2.getDisplayValue());
+		
+		var duration= GlideDate.subtract(sgd1, sgd2);
+		//gs.addInfoMessage(duration.getDayPart());
+		//gs.addInfoMessage(duration.getDisplayValue());
+		gs.addInfoMessage(duration.getDayPart());
+		
+		return duration.getDayPart();
+	},
+
+    type: 'isToday'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>takatatt</sys_created_by>
+        <sys_created_on>2019-02-18 11:23:41</sys_created_on>
+        <sys_id>22abd5c4db3763000ceb2a9a489619a0</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>isToday</sys_name>
+        <sys_package display_value="Sample Application" source="x_135686_sample_ap">7bcc468cdb5163000ceb2a9a48961950</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Sample Application">7bcc468cdb5163000ceb2a9a48961950</sys_scope>
+        <sys_update_name>sys_script_include_22abd5c4db3763000ceb2a9a489619a0</sys_update_name>
+        <sys_updated_by>takatatt</sys_updated_by>
+        <sys_updated_on>2019-02-19 05:47:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

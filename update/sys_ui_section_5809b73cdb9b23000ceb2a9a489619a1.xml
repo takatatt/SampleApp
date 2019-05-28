@@ -1,31 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update>
+<?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="Note" section_id="5809b73cdb9b23000ceb2a9a489619a1" sys_domain="global" table="x_135686_sample_ap_test" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_wiki</element>
             <position>0</position>
-            <sys_created_by>devadmin</sys_created_by>
-            <sys_created_on>2019-01-27 10:03:35</sys_created_on>
-            <sys_id>60093b3cdb9b23000ceb2a9a4896192d</sys_id>
+            <sys_created_by>takatatt</sys_created_by>
+            <sys_created_on>2019-02-10 16:34:29</sys_created_on>
+            <sys_id>0fb89925db2323000ceb2a9a48961920</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Note" display_value="Note" name="x_135686_sample_ap_test" sys_domain="global" view="Default view">5809b73cdb9b23000ceb2a9a489619a1</sys_ui_section>
-            <sys_updated_by>devadmin</sys_updated_by>
-            <sys_updated_on>2019-01-27 10:03:35</sys_updated_on>
+            <sys_updated_by>takatatt</sys_updated_by>
+            <sys_updated_on>2019-02-10 16:34:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_ci_note</element>
             <position>1</position>
-            <sys_created_by>devadmin</sys_created_by>
-            <sys_created_on>2019-01-27 10:03:35</sys_created_on>
-            <sys_id>e0093b3cdb9b23000ceb2a9a4896192d</sys_id>
+            <sys_created_by>takatatt</sys_created_by>
+            <sys_created_on>2019-02-10 16:34:29</sys_created_on>
+            <sys_id>8fb89925db2323000ceb2a9a48961920</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Note" display_value="Note" name="x_135686_sample_ap_test" sys_domain="global" view="Default view">5809b73cdb9b23000ceb2a9a489619a1</sys_ui_section>
-            <sys_updated_by>devadmin</sys_updated_by>
-            <sys_updated_on>2019-01-27 10:03:35</sys_updated_on>
+            <sys_updated_by>takatatt</sys_updated_by>
+            <sys_updated_on>2019-02-10 16:34:29</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
